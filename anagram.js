@@ -6,7 +6,6 @@ function validAnagram(str1, str2) {
     return true;
   }
   let str1Obj = {};
-  //   let str2Obj = {};
   for (let a of str1) {
     str1Obj[a] = (str1Obj[a] || 0) + 1;
   }
@@ -18,15 +17,6 @@ function validAnagram(str1, str2) {
     }
   }
   return true;
-  //   for (let key in str1Obj) {
-  //     if (!(key in str2Obj)) {
-  //       return false;
-  //     }
-  //     if (str1Obj[key] !== str2Obj[key]) {
-  //       return false;
-  //     }
-  //     return true;
-  //   }
 }
 
 console.log(validAnagram("", "")); // true
