@@ -1,5 +1,6 @@
 function maxSubArraySum(arr, num) {
   if (num > arr.length) return null;
+  //Big O notation - O(n^2)
   //   let max = -Infinity;
   //   for (let i = 0; i < arr.length - num + 1; i++) {
   //     temp = 0;
@@ -12,6 +13,7 @@ function maxSubArraySum(arr, num) {
   //     }
   //   }
   //   return max;
+  //Big O notation - O(n)
   let maxSum = 0;
   let tempSum = 0;
   for (let i = 0; i < num; i++) {
